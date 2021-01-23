@@ -1,0 +1,1219 @@
+// Стили hover
+@media(hover: hover) and (pointer: fine)
+  // Стили ссылок
+  .header-menu__link
+    position: relative
+    &::before 
+      content: ''
+      bottom: 0
+      left: 0
+      position: absolute
+      width: 0%
+      height: 1px
+      background-color: #183B56
+      transition: 0.2s
+    &:hover::before
+      width: 100%
+    &:active::before
+      background-color: #c5c4c4
+    &:active
+      color: #c5c4c4
+      transition: 0.2s
+  .collection-link,
+  .trending__item,
+  .slide-item__link,
+  .footer__link
+    &:hover
+      text-decoration: underline
+    &:active
+      color: #fff
+  // Стили кнопок
+  .header-login,
+  .subscribe__button,
+  .modal__button
+    &:hover
+      border: solid 2px #a5a4a4 
+    &:active
+      background-color: $dark
+      color: #fff
+  .subscribe__button,
+  .hero-block__button
+    &:hover
+      background-color: $light
+      color: $primary
+    &:active
+      border: inset 1px $dark
+  .packages-card__button,
+  .packages-mincard__button,
+    &:hover
+      background-color: $light
+      color: $primary
+    &:active
+      padding: 9px 25px
+      border: inset 1px $dark
+  .footer__button,
+    &:hover
+      background-color: $light
+      color: $primary
+    &:active
+      padding: 16px 23px
+      border: inset 1px $dark
+  .card__button
+    &:hover
+      background-color: $light
+      color: $primary
+    &:active
+      padding: 6px 20px
+      border: inset 1px $dark
+  .button
+    &-bthome
+      &:hover
+        background-color: $light
+        color: $primary
+      &:active
+        border: inset 1px $dark
+  // Стили svg иконок
+  .trending__img--add,
+  .modal__close-img
+    &:hover
+      background-color: #36B37E
+    &:active
+      background-color: $light
+  .swiper-button-prev,
+  .swiper-button-next
+    &:hover
+      background-color: rgba(54,179,126,0.1)
+      border-radius: 50%
+    &:active
+      background-color: #36B37E
+  .footer__social-icon
+    &:hover
+      background-color: #36B37E
+      border-radius: 50%
+    &:active
+      background-color: $dark
+
+
+
+
+// Стили 
+@media (max-width: 1200px)
+  .container
+    max-width: 90%
+  .header
+    &-menu
+      width: 46%
+      min-width: 420px
+  
+  .hero
+    background-repeat: no-repeat
+    background-position: center center
+    padding-left: 7% 
+    &-block
+
+  .collection
+    width: 88%
+    &-wrapp
+      width: 33%
+      padding-left: 3%
+    &-img
+      &__big
+        min-width: 230px
+      &__small
+        min-width: 230px
+    &-text
+      padding-left: 3%
+    &-title
+      line-height: 50px
+
+  .trending
+    width: 91%
+    &__card
+      width: 218px
+    &__img
+      height: 294px
+      &--add
+
+  .card
+    &-name
+      &--add
+        margin-top: 15px
+        font-size: 20px
+
+  .subscribe
+    &__wrapper
+      width: 90%
+    &__input
+
+  .stories
+    padding: 79px 0 50px 0
+    &-wrapper
+      display: block
+    &-block
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      align-items: center
+      height: 322px
+    &-title
+      width: 500px
+      margin-top: 24px
+      margin-left: 6px
+    &-text
+      width: 520px
+      text-align: center
+      margin-top: 17px
+    &-button
+      max-width: 138px
+    &-slider
+      width: 88.8%
+      margin-right: auto
+      margin-left: auto
+
+    .swiper
+      &-button
+        &-prev
+          position: absolute
+          top: 262px
+          left: 41.4%
+          z-index: 100
+        &-next
+          position: absolute
+          top: 262px
+          left: 51.4%
+          z-index: 100
+
+
+  .footer
+    padding-left: 20px
+    &-wrapper
+      display: grid
+      grid-template-rows: 1fr
+      grid-template-columns: 250px 160px 160px 160px 150px
+      column-gap: 20px
+
+
+@media (max-width: 992px)
+  .container
+    max-width: 90%
+  .header
+    &-menu
+      width: 46%
+      min-width: 420px
+      margin-right: auto
+
+  .collection
+    &-wrapp
+    &-img
+      &__big
+        min-width: 200px
+      &__small
+        min-width: 200px
+    &-text
+    &-title
+      line-height: 40px
+      font-size: 40px
+    &-description
+      margin-top: 4%
+      margin-bottom: 4%
+      font-size: 18px
+    &-link
+      font-size: 15px
+    &-icon
+  .card-image
+    &-min
+
+  .trending
+    width: 79.1%
+    margin-top: 145px
+    &__wrapp
+      flex-direction: column
+      flex-wrap: wrap
+      align-items: center
+    &__title
+      margin-left: 2px
+    &__tabs
+      margin-top: 28px
+    &__item
+      padding-left: 19px
+      padding-right: 19px
+    &__content
+      margin-top: 55px
+    &__card
+      width: 100%
+      max-width: 46%
+      margin-bottom: 0
+      max-height: 489px
+    &__img
+      width: 100%
+      max-width: 100%
+      height: 100%
+      max-height: 71.5%
+
+  .card
+    &-foto
+      &--h100
+        height: 100%
+        width: 100%
+        object-fit: cover
+    &-icon
+      &--add
+        margin-top: 45%
+    &-name
+      &--add
+        margin-top: 28px
+        font-size: 24px
+  
+  .testimonial
+    &__swiper-container
+      width: 90%
+    &__title
+      margin-top: 12px
+
+  .subscribe
+    margin-top: 100px
+    padding-top: 73px
+    padding-bottom: 40px
+    background-image: url(../img/Base-2.jpg)
+    background-position: center center
+    background-size: cover
+    &__wrapper
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      align-items: center
+    &__block
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      align-items: center
+    &__text
+      margin-top: -1px
+      text-align: center
+    &__form
+      margin-top: 56px
+      margin-left: 17px
+
+
+
+    
+  .footer
+    &-wrapper
+      display: grid 
+      grid-template-rows: 2fr
+      grid-template-columns: 263px 165px 165px
+      column-gap: 30px
+      row-gap: 30px
+    &__group
+      grid-row: 1
+      grid-column: 1
+    &__list
+      &--nav
+        grid-row: 1
+        grid-column: 2
+      &--ser
+        grid-row: 1
+        grid-column: 3
+      &--com
+        grid-row: 2
+        grid-column: 2
+      &--con
+        grid-row: 2
+        grid-column: 3
+  
+  .footer
+    padding-top: 64px
+    padding-left: 57px
+    &-wrapper
+      grid-template-columns: 263px 172px 165px
+      column-gap: 21px
+      row-gap: 48px
+
+
+
+
+@media (max-width: 768px)
+  .to-top
+    display: none
+  // Мобильное меню
+  .mobile
+    &-menu
+      display: none
+  
+  .header-mobile-menu
+    display: block
+
+  .header
+    &-menu
+      &-mobile
+        margin-bottom: 20px
+        &__item
+          list-style: none
+          margin-bottom: 20px
+        &__link
+          text-decoration: none
+          font-style: normal
+          font-weight: 600
+          font-size: 16px
+          line-height: 22px
+          color: #183B56
+    &-login
+      &-mobile
+        font-family: 'Open Sans'
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 22px
+        text-align: center
+        color: #1565D8
+        text-decoration: none
+        border: 2px solid #1565D8
+        border-radius: 8px
+        min-height: 40px
+        max-width: 250px
+        width: 100%
+        background-color: #fff
+
+
+
+  // Остальные стили
+  .container
+    max-width: 84.3%
+  .header
+    &--mobile
+      &_fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 101
+        height: 72px
+    &-wrapper
+
+    &-menu,
+    &-login
+      display: none
+      &--visible
+        display: block
+        z-index: 102
+
+    &-mobile
+      &-menu
+        display: none
+        overflow: scroll
+        &--visible
+          display: block
+          position: fixed
+          top: 10px
+          left: 30px
+          right: 30px
+          padding: 36px 24px 36px 24px
+          background-color: #fff
+          z-index: 101
+          box-shadow: 0 0 10px rgba(0,0,0,0.2)
+          display: flex
+          align-items: center
+          justify-content: space-between
+          flex-direction: column
+          overflow: scroll
+      
+
+    &-button
+      margin: -3px 0 0 0 
+      padding: 0
+      display: flex
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      height: 17.7px
+      background-color: $light
+      cursor: pointer
+      &__line
+        width: 22px
+        height: 2.2px
+        background-color: #3A4C66
+        border-radius: 1px
+      &-close
+        background-color: #fff
+        border: none
+        position: absolute
+        top: 15px
+        right: 13px
+  .logo
+    &__top
+      margin-top: 0
+
+  .hero
+    margin-top: 102px
+    width: 94.7%
+    max-width: 94.7%
+    max-height: 624px
+    background-image: url(../img/hero-Image-2.jpg)
+    background-repeat: no-repeat
+    padding-top: 36px
+    padding-left: 28px
+    padding-bottom: 25px
+    &-block
+      &__tag
+        margin-top: 40px
+        max-width: 444px
+        width: 73%
+        justify-content: space-between
+        flex-wrap: wrap
+        height: auto
+      &__title
+        font-size: 48px
+        line-height: 60px
+        margin-top: 24px
+        max-width: 370px
+      &__text
+        margin-top: 20px
+        font-size: 18px
+        line-height: 32px
+        max-width: 400px
+      &__button
+        margin-top: 36px
+  .tag
+    margin-bottom: 10px
+    &__icon
+  
+  .collection
+    width: 87.5%
+    margin-right: auto
+    margin-left: auto
+    margin-top: 80px
+    position: relative
+    &-wrapp
+      width: 100%
+      padding-left: 30px
+    &-img
+      &__big
+        width: 100%
+        max-width: 322px
+      &__small
+        max-width: 320px
+    &-text
+      position: absolute
+      top: 530px
+      width: 100%
+      max-width: 672px
+      padding: 0
+    &-title
+      font-size: 48px
+      line-height: 60px
+    &-description
+      font-style: normal
+      font-weight: normal
+      font-size: 20px
+      line-height: 36px
+      margin-top: 25px
+      margin-bottom: 23px
+    &-link
+      font-size: 18px
+    &-icon
+      margin-left: 16px
+  .card-image
+    &-min
+
+  .trending
+    width: 79.1%
+    margin-top: 396px
+    &__wrapp
+      flex-direction: column
+      flex-wrap: wrap
+      align-items: center
+    &__title
+      margin-left: 2px
+    &__tabs
+      margin-top: 28px
+    &__item
+      padding-left: 19px
+      padding-right: 19px
+    &__content
+      margin-top: 55px
+      &-item
+        margin-left: 0
+    &__card
+      width: 100%
+      max-width: 46%
+      margin-bottom: 0
+      max-height: 489px
+    &__img
+      width: 100%
+      max-width: 100%
+      height: 100%
+      max-height: 71.5%
+
+  .card
+    &-foto
+      &--h100
+        height: 100%
+        object-fit: cover
+    &-icon
+      &--add
+        margin-top: 45%
+    &-name
+      &--add
+        margin-top: 28px
+        font-size: 24px
+
+  .testimonial
+    margin-top: 43px
+    &__swiper-slide-wrapp
+      min-height: 417px
+      padding-bottom: 40px
+    &__swiper-container
+      width: 80%
+    &__text
+      margin-top: 39px
+      text-align: center
+    &__title
+      margin-top: 28px
+  
+  .hr
+	  margin-top: 31px
+
+  .subscribe
+    margin-top: 40px
+    padding-top: 73px
+    padding-bottom: 80px
+    background-image: url(../img/Base-2.jpg)
+    background-position: center center
+    background-size: cover
+    &__wrapper
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      align-items: center
+      padding-right: 0
+    &__block
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      align-items: center
+    &__text
+      margin-top: -1px
+      margin-left: -13px
+      text-align: center
+    &__form
+      margin-top: 56px
+      margin-left: 17px
+      margin-right: 21px
+      
+  .footer
+    padding-top: 64px
+    padding-left: 7.4%
+    &-wrapper
+      grid-template-columns: 263px 172px 165px
+      column-gap: 3%
+      row-gap: 48px
+
+@media (max-width: 694px)
+
+  .footer
+    padding-top: 48px
+    padding-left: 15%
+    padding-bottom: 107px
+    &-wrapper
+      display: grid 
+      grid-template-rows: 202px 202px 167px 100px 150px
+      grid-template-columns: 270px
+      column-gap: 0
+      row-gap: 30px
+    &__group
+      grid-row: 5
+      grid-column: 1
+      align-items: center
+    &__list
+      &--nav
+        grid-row: 1
+        grid-column: 1
+      &--ser
+        grid-row: 2
+        grid-column: 1
+      &--com
+        grid-row: 3
+        grid-column: 1
+      &--con
+        grid-row: 4
+        grid-column: 1
+    &__title
+      font-size: 16px
+      line-height: 12px
+      margin: 5px 0 25px -1px
+    &__item
+      font-size: 14px
+      line-height: 20px
+      margin: 15px 0 0 -1px
+    &__logo
+      margin-top: 32px
+      margin-right: 3px
+    &__text
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 24px
+      text-align: center
+      max-width: 85%
+      margin-right: 16px
+      margin-top: -6px
+      
+123123123
+
+@media (max-width: 610px)
+  .hero
+    &-block
+      &__tag
+        max-width: 300px
+        margin-top: 15px
+        margin-bottom: 25px
+
+  .trending
+    margin-top: 430px
+
+
+  .subscribe
+    // background-image: url(../img/Base-3.jpg)
+    // background-position: center center
+    // background-size: cover
+    padding-top: 65px
+    padding-bottom: 122px
+    &__wrapper
+      width: 100%
+      padding-right: 0
+    &__block
+      width: 95%
+    &__title
+      // font-size: 28px
+      // line-height: 36px
+      // text-align: center
+      // letter-spacing: 0.2px
+      // margin-bottom: 24px
+    &__text
+      // font-size: 15px
+      // line-height: 28px
+      // text-align: center
+    &__form
+      width: 87.7%
+      height: 48px
+      margin-top: 20px
+      margin-left: auto
+      margin-right: auto
+    &__img
+      top: 16px
+    &__button
+      top: 58px
+      height: 48px
+      bottom: 10px
+      border-radius: 8px
+      left: 0
+      right: 0
+      width: 100%
+
+
+@media (max-width: 576px)
+  
+  .card
+    &-name
+      font-size: 20px
+      line-height: 20px
+
+
+@media (max-width: 480px)
+  .container
+    max-width: 85.3%
+  .header
+    &-wrapper
+      margin-top: 18px
+    &-button
+      margin: -3px 1px 0 0
+  
+  .hero
+    background-image: url(../img/hero-Image-3.jpg)
+    background-position: center top
+    // background-position: right top
+    text-align: center
+    padding-top: 300px
+    padding-left: 10px
+    padding-right: 10px
+    max-height: inherit
+    &-block
+      &__badge
+        padding: 2px 26.36px
+        margin: auto
+        width: 196px
+        height: 24px
+      &__tag
+        width: 87%
+        height: 80px
+        margin: auto
+        margin-top: 15px
+        flex-wrap: wrap
+        justify-content: center
+      &__title
+        margin-right: auto
+        margin-left: auto
+        font-size: 42px
+        line-height: 50px
+      &__text
+        margin-right: auto
+        margin-left: auto
+      &__button
+        padding: 13px 20px
+        font-size: 16px
+        line-height: 22px
+        text-align: center
+        margin-top: 24px
+        width: 80%
+  .tag
+    &__icon
+      width: 24px
+    &__text
+      margin-right: 15px
+
+  .collection
+    display: block
+    margin-top: 64px
+    width: 90.5%
+    &-wrapp
+      flex-wrap: inherit
+      padding: 0
+      max-width: 100%
+      text-align: center
+    &-img
+      border-radius: 3.36px
+      &__big
+        max-width: 100%
+        display: block
+        width: 100%
+        max-height: 300px
+      &__small
+        height: 19.8%
+        margin-top: 14px
+        min-width: 50px
+        &--mr14
+          margin-right: 14px
+    &-text
+      top: 447px
+      text-align: center
+    &-title
+      font-size: 28px
+      line-height: 36px
+    &-description
+      font-size: 16px
+      line-height: 28px
+      margin-top: 20px
+      width: 91%
+      margin-right: auto
+      margin-left: auto
+    &-link
+      display: none
+    &-icon
+  .card-image
+    &-min
+
+  .trending
+    margin-top: 280px
+    width: 90%
+    &__wrapp
+    &__title
+      font-size: 28px
+      line-height: 36px
+      text-align: center
+      letter-spacing: 0.2px
+    &__tabs
+      z-index: 100
+      margin-top: 24px
+    &__item
+      font-weight: normal
+      font-size: 16px
+      line-height: 22px
+      padding-left: 10px
+      padding-right: 10px
+    &__content
+      margin-top: 36px
+    &__card
+      max-width: 48%
+      margin-bottom: 20px
+    &__img
+      width: 100%
+      height: 100%
+
+    
+  .card
+    &-foto
+      width: 100%
+      bject-fit: cover
+    &-name
+      font-size: 16px
+      line-height: 20px
+      letter-spacing: 0.2px
+      margin: 18px 0 0 0
+      &--add
+        font-size: 17px
+        line-height: 20px
+        text-align: center
+        letter-spacing: 0.2px
+    &-bay
+      margin: 0
+      display: block
+    &-price
+      font-size: 14px
+      line-height: 24px
+      margin-right: 9px
+    &-icon
+      width: 14px
+      &--add
+        width: 25px
+        margin-top: 32%
+    
+  .subscribe
+    background-image: url(../img/Base-3.jpg)
+    background-position: center center
+    background-size: cover
+    padding-top: 65px
+    padding-bottom: 122px
+    &__wrapper
+      width: 100%
+      padding-right: 0
+    &__block
+      width: 95%
+    &__title
+      font-size: 28px
+      line-height: 36px
+      text-align: center
+      letter-spacing: 0.2px
+      margin-bottom: 24px
+    &__text
+      font-size: 15px
+      line-height: 28px
+      text-align: center
+      max-width: 90%
+    &__form
+      width: 87.7%
+      height: 48px
+      margin-top: 8px
+      margin-left: auto
+      margin-right: auto
+    &__img
+      top: 16px
+    &__button
+      top: 58px
+      height: 48px
+      bottom: 10px
+      border-radius: 8px
+      left: 0
+      right: 0
+      width: 100%
+
+  .modal
+    &__dialog
+      max-width: 90%
+      min-width: 100px
+      padding: 40px 20px
+    &__form
+      min-width: 100px
+    &__login
+      
+    &__password
+      
+    &__button
+      max-width: 100%
+      min-width: 100px
+
+
+@media (max-width: 320px)
+  // Мобильное меню
+  
+  .mobile
+    &-menu
+      display: none
+  
+  .header-mobile-menu
+    display: block
+
+  .header
+    &-menu
+      &-mobile
+        margin-bottom: 20px
+        &__item
+          list-style: none
+          margin-bottom: 20px
+        &__link
+          text-decoration: none
+          font-style: normal
+          font-weight: 600
+          font-size: 16px
+          line-height: 22px
+          color: #183B56
+    &-login
+      &-mobile
+        font-family: 'Open Sans'
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 22px
+        text-align: center
+        color: #1565D8
+        text-decoration: none
+        border: 2px solid #1565D8
+        border-radius: 8px
+        min-height: 40px
+        max-width: 300px
+        width: 100%
+        background-color: #fff
+
+  .header
+    &--mobile
+      &_fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 101
+        height: 72px
+    &-wrapper
+
+    &-menu,
+    &-login
+      display: none
+      &--visible
+        display: block
+        z-index: 102
+
+    &-mobile
+      &-menu
+        display: none
+        &--visible
+          display: block
+          position: fixed
+          top: 10px
+          left: 8px
+          right: 8px
+          padding: 36px 24px 36px 24px
+          background-color: #fff
+          z-index: 101
+          box-shadow: 0 0 10px rgba(0,0,0,0.2)
+
+  // Остальные стили
+  .hero
+    margin-top: 39px
+    width: 100%
+    max-width: 100%
+    background-image: url(../img/hero-Image-3.jpg)
+    background-position: center center
+    background-repeat: no-repeat
+    border-radius: 0
+    padding-top: 381px
+    padding-left: 0
+    padding-right: 0
+    padding-bottom: 22px
+    text-align: center
+    &-block
+      &__badge
+        padding: 2px 26.36px
+        margin: auto
+        width: 196px
+        height: 24px
+      &__tag
+        width: 87%
+        height: 80px
+        margin: auto
+        margin-top: 20px
+        flex-wrap: wrap
+        justify-content: center
+      &__title
+        font-size: 32px
+        line-height: 40px
+        text-align: center
+        letter-spacing: 0.2px
+        max-width: 244px
+        margin: auto
+        margin-top: 21px
+      &__text
+        font-size: 16px
+        line-height: 28px
+        text-align: center
+        max-width: 260px
+        margin: auto
+        margin-top: 19px
+      &__button
+        padding: 13px 20px
+        font-size: 16px
+        line-height: 22px
+        text-align: center
+        margin-top: 24px
+        width: 80%
+  .tag
+    &__icon
+      width: 24px
+    &__text
+      margin-right: 15px
+
+  .trending
+    margin-top: 355px
+    width: 90%
+    &__title
+      font-size: 28px
+      line-height: 36px
+      text-align: center
+      letter-spacing: 0.2px
+    &__tabs
+      margin-top: 24px
+    &__item
+      font-weight: normal
+      font-size: 16px
+      line-height: 22px
+      padding-left: 10px
+      padding-right: 10px
+    &__content
+      margin-top: 36px
+    &__card
+      max-width: 48%
+      margin-bottom: 20px
+    &__img
+      width: 140px
+      height: 170px
+
+    
+  .card
+    &-foto
+      width: 100%
+      bject-fit: cover
+    &-name
+      font-size: 16px
+      line-height: 20px
+      letter-spacing: 0.2px
+      margin: 18px 0 0 0
+      &--add
+        font-size: 17px
+        line-height: 20px
+        text-align: center
+        letter-spacing: 0.2px
+    &-bay
+      margin: 0
+      display: block
+    &-price
+      font-size: 14px
+      line-height: 24px
+      margin-right: 9px
+    &-icon
+      width: 14px
+      &--add
+        width: 25px
+        margin-top: 32%
+
+  .testimonial
+    margin-top: 39px
+    &__swiper-slide-wrapp
+      min-height: 417px
+      padding-bottom: 40px
+    &__swiper-container
+      width: 80%
+    &__img
+      width: 27.5%
+    &__text
+      margin-top: 22px
+      text-align: center
+      font-size: 18px
+      line-height: 36px
+      letter-spacing: 0.12px
+    &__title
+      margin-top: 28px
+      max-width: 70%
+  
+  .hr
+    max-width: 100%
+    width: 100%
+    margin-top: 50px 
+    
+  .subscribe
+    background-image: url(../img/Base-3.jpg)
+    background-position: center center
+    background-size: cover
+    padding-top: 65px
+    padding-bottom: 122px
+    padding-left: 10px
+    padding-right: 10px
+    &__wrapper
+      width: 100%
+      padding-right: 0
+    &__block
+      width: 95%
+    &__title
+      font-size: 28px
+      line-height: 36px
+      text-align: center
+      letter-spacing: 0.2px
+      margin-bottom: 24px
+    &__text
+      font-size: 15px
+      line-height: 28px
+      text-align: center
+      max-width: 91%
+      margin-left: 0
+    &__form
+      width: 93%
+      height: 48px
+      margin-top: 36px
+      margin-left: auto
+      margin-right: auto
+    &__img
+      top: 16px
+    &__button
+      top: 58px
+      height: 48px
+      bottom: 10px
+      border-radius: 8px
+      left: 0
+      right: 0
+      width: 100%
+
+  .footer
+    padding-top: 48px
+    padding-left: 35px
+    padding-bottom: 107px
+    &-wrapper
+      display: grid 
+      grid-template-rows: 202px 202px 167px 100px 150px
+      grid-template-columns: 270px
+      column-gap: 0
+      row-gap: 30px
+    &__group
+      grid-row: 5
+      grid-column: 1
+      align-items: center
+    &__list
+      &--nav
+        grid-row: 1
+        grid-column: 1
+      &--ser
+        grid-row: 2
+        grid-column: 1
+      &--com
+        grid-row: 3
+        grid-column: 1
+      &--con
+        grid-row: 4
+        grid-column: 1
+    &__title
+      font-size: 16px
+      line-height: 12px
+      margin: 5px 0 25px -1px
+    &__item
+      font-size: 14px
+      line-height: 20px
+      margin: 15px 0 0 -1px
+    &__logo
+      margin-top: 32px
+      margin-right: 3px
+    &__text
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 24px
+      text-align: center
+      max-width: 85%
+      margin-right: 16px
+      margin-top: -6px

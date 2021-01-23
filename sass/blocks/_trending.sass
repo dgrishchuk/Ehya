@@ -1,0 +1,135 @@
+.trending
+  width: 100%
+  max-width: 1136px
+  min-height: 1040px
+  margin-top: 145px
+  margin-left: auto
+  margin-right: auto
+  &__wrapp
+    display: flex
+    justify-content: space-between
+  &__title
+    display: block
+    font-style: normal
+    font-weight: bold
+    font-size: 48px
+    line-height: 60px
+    letter-spacing: 0.2px
+  &__tabs
+    max-width: 340px
+    display: flex
+    justify-content: space-between
+    list-style: none
+    align-items: center
+  &__item
+    cursor: pointer
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 25px
+    color: #5A7184
+    padding-left: 39px
+    &--active
+      font-family: Open Sans
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 25px
+      color: #183B56
+  &__content
+    margin-top: 48px
+    &-item
+      list-style: none
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      margin-right: 1px
+      margin-left: 5px
+  &__item
+    list-style: none
+  &__card
+    width: 100%
+    max-width: 260px
+    margin-bottom: 50px
+  &__img
+    width: 100%
+    max-width: 260px
+    height: 350px
+    border-radius: 8px
+    overflow: hidden
+    &--add
+      background-color: #1565d8
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      align-items: center
+      text-decoration: none
+      cursor: pointer
+
+      
+.card
+  &-foto
+    &--h100
+      height: 100%
+  &-name
+    margin: 20px 10px 0 10px
+    font-weight: bold
+    font-size: 24px
+    line-height: 32px
+    letter-spacing: 0.2px
+    &--add
+      margin: 0
+      margin-top: 29px
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 32px
+      text-align: center
+      letter-spacing: 0.2px
+      color: #FFFFFF
+  &-bay
+    margin: 0 10px 0 10px
+    display: flex
+    align-self: center
+    justify-content: space-between
+    &--add
+      display: block
+      margin-top: auto
+      margin-bottom: auto
+      margin-right: auto
+      margin-left: auto
+      max-width: 220px
+      max-height: 126px
+  &-price
+    display: inline
+    align-self: center
+    align-items: center
+    margin-top: 3px
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 36px
+    color: #5A7184
+  &-icon
+    margin-top: 6px
+    &--add
+      display: inline-block
+      margin-top: 48%
+
+
+
+/* Стили АКТИВНОГО пункта меню */
+.tabs__item--active
+  font-family: Open Sans
+  font-style: normal
+  font-weight: bold
+  font-size: 18px
+  line-height: 25px
+  color: #183B56
+/* Стили Скрытого блока контента */
+.content__item
+  display: none
+/* Стили АКТИВНОГО блока контента */
+.content__item--active
+  display: flex

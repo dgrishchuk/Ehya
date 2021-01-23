@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ehya – Каждый может быть крутым и модным</title>
+  <link rel="icon" href="img/favicon.ico" sizes="16x16">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header header--mobile_fixed">
+    <div class="container">
+      <div class="header-wrapper">
+        <a href="index.html" class="logo logo__top">
+          <img src="img/Logo.png" alt="Logo: ehya" class="logo__img">
+        </a>
+        <!-- /.logo-link -->
+        <!-- Мобильное меню -->
+        <div class="header-mobile-menu">
+          <button class="header-button-close">
+            <img src="img/icon-close.svg" alt="icon: close">
+          </button>
+          <ul class="header-menu-mobile">
+            <li class="header-menu-mobile__item"><a href="#" class="header-menu-mobile__link">Главная</a></li>
+            <li class="header-menu-mobile__item"><a href="#" class="header-menu-mobile__link">Новинки</a></li>
+            <li class="header-menu-mobile__item"><a href="#" class="header-menu-mobile__link">Тренды</a></li>
+            <li class="header-menu-mobile__item"><a href="#" class="header-menu-mobile__link">Отзывы</a></li>
+            <li class="header-menu-mobile__item"><a href="#" class="header-menu-mobile__link">Контакты</a></li>
+          </ul>
+          <button data-toggle="modal" href="#" class="header-login-mobile">Войти</button>
+        </div>
+        <!-- /.header-mobile-menu -->
+        <ul class="header-menu">
+          <li class="header-menu__item"><a href="#" class="header-menu__link">Главная</a></li>
+          <li class="header-menu__item"><a href="#" class="header-menu__link">Новинки</a></li>
+          <li class="header-menu__item"><a href="#" class="header-menu__link">Тренды</a></li>
+          <li class="header-menu__item"><a href="#" class="header-menu__link">Отзывы</a></li>
+          <li class="header-menu__item"><a href="#" class="header-menu__link">Контакты</a></li>
+        </ul>
+        <!-- /.header-menu -->
+        <a data-toggle="modal" href="#" class="header-login">Войти</a>
+        <button class="header-button">
+          <span class="header-button__line"></span>
+          <span class="header-button__line"></span>
+          <span class="header-button__line"></span>
+        </button>
+        <!--/.header-button -->
+      </div>
+      <!-- /.header-wrapper -->
+    </div>
+    <!-- /.container -->
+  </header>
+  <!-- /.header -->
+  <div class="hero">
+    <div class="hero-block">
+        <div class="hero-block__badge"># READY TO BE COOL</div>
+        <h1 lang="en" class="hero-block__title">Каждый может быть крутым и модным</h1>
+        <p class="hero-block__text">
+          Чтобы быть в тренде и стать модным, вам нужно носить отличную одежду и обновлять свой стиль. Всё это вы можете найти
+          здесь. Начните сейчас.
+        </p>
+        <button href="#" class="hero-block__button">Подобрать одежду</button>
+        <div class="hero-block__tag">
+          <div class="tag">
+            <img src="img/Icon-tag-1.png" alt="" class="tag__icon">
+            <span lang="en" class="tag__text">Онлайн оплата</span>
+          </div>
+          <div class="tag">
+            <img src="img/Icon-tag-2.png" alt="" class="tag__icon">
+            <span lang="en" class="tag__text">Гарантия</span>
+          </div>
+          <div class="tag">
+            <img src="img/Icon-tag-3.png" alt="" class="tag__icon">
+            <span lang="en" class="tag__text">Качество</span>
+          </div>
+        </div>
+        <!-- /.hero-block__tag -->
+    </div>
+    <!-- /.hero-block -->
+  </div>
+  <!-- /.hero -->
+  <div class="collection">
+    <div class="collection-img collection-img__big"><img src="img/collection-1.png" alt="" class="card-image"></div>
+    <div class="collection-wrapp">
+      <div class="collection-img collection-img__small collection-img__small--mr14"><img src="img/collection-2.png" alt="" class="card-image-min card-image-min"></div>
+      <div class="collection-img collection-img__small"><img src="img/collection-3.png" alt="" class="card-image-min"></div>
+    </div>
+    <!-- /.collection-img -->
+    <div class="collection-text">
+      <h1 lang="en" class="collection-title">Новая зимняя коллекция</h1>
+      <p class="collection-description">Сейчас зимний сезон. Вы можете увидеть больше из этой коллекции, нажав кнопку ниже. Успейте купить, пока коллекция есть
+      в наличии. Используйте код EHYA20, чтобы получить 20%&nbsp;скидку.</p>
+      <a href="#" class="collection-link">Посмотреть коллекцию
+        <img src="img/Icon-next.svg" alt="icon: next" class="collection-icon">
+      </a>
+    </div>
+    <!-- /.collection-text -->
+  </div>
+  <!-- /.collection -->
+  <div class="trending">
+    <div class="trending__wrapp">
+      <h1 lang="en" class="trending__title">Тренды</h1>
+      
+      <!-- Блок меню - навигация по табам -->
+      <ul class="trending__tabs tabs">
+        <li data-target="#news" class="trending__item tabs__item tabs__item--active">Новинки</li>
+        <li data-target="#best" class="trending__item tabs__item">Лучшее</li>
+        <li data-target="#soon" class="trending__item tabs__item">Скоро</li>
+      </ul>
+    </div>
+    <!-- /.trending__wrapp -->
+
+    <!-- Блок контента -->
+    <ul class="trending__content content">
+
+
+      <!-- Новинки -->
+      <li id="news" class="trending__content-item content__item content__item--active">
+        <!-- Карточка 1 -->
+        <div class="trending__card">
+          <div class="trending__img">
+            <img src="img/tranding/tanding-1.png" alt="" class="card-foto card-foto--h100">
+          </div>
+          <h1 lang="en" class="card-name">Minimalist Style</h1>
+          <div class="card-bay">
+            <p class="card-price">$25.7</p>
+            <img src="img/shopping-cart.svg" alt="" class="card-icon">
+          </div>
+          <!-- /.card-bay -->
+        </div>
+        <!-- /.trending__card -->
+        <!-- Карточка 2 -->
+        <div class="trending__card">
+          <div class="trending__img">
+            <img src="img/tranding/tanding-2.png" alt="" class="card-foto">
+          </div>
+          <h1 lang="en" class="card-name">Luxury Gown</h1>
+          <div class="card-bay">
+            <p class="card-price">$30.6</p>
+            <img src="img/shopping-cart.svg" alt="" class="card-icon">
+          </div>
+          <!-- /.card-bay -->
+        </div>
+        <!-- /.trending__card -->
+        <!-- Карточка 3 -->
+        <div class="trending__card">
+          <div class="trending__img">
+            <img src="img/tranding/tanding-3.jpg" alt="" class="card-foto">
+          </div>
+          <h1 lang="en" class="card-name">Full Coloristy</h1>
+          <div class="card-bay">
+            <p class="card-price">$25.7</p>
+            <img src="img/shopping-cart.svg" alt="" class="card-icon">
+          </div>
+          <!-- /.card-bay -->
+        </div>
+        <!-- /.trending__card -->
+        <!-- Карточка 4 -->
+        <div class="trending__card">
+          <div class="trending__img">
+            <img src="img/tranding/tanding-4.png" alt="" class="card-foto">
+          </div>
+          <h1 lang="en" class="card-name">Pinky Winky</h1>
+          <div class="card-bay">
+            <p class="card-price">$109</p>
+            <img src="img/shopping-cart.svg" alt="" class="card-icon">
+          </div>
+          <!-- /.card-bay -->
+        </div>
+        <!-- /.trending__card -->
+        <!-- Карточка 5 -->
+        <div class="trending__card">
+          <div class="trending__img">
+            <img src="img/tranding/tanding-5.png" alt="" class="card-foto">
+          </div>
+          <h1 lang="en" class="card-name">Holiday Vibes</h1>
+          <div class="card-bay">
+            <p class="card-price">$51.2</p>
+            <img src="img/shopping-cart.svg" alt="" class="card-icon">
+          </div>
+          <!-- /.card-bay -->
+        </div>
+        <!-- /.trending__card -->
+        <!-- Карточка 6 -->
+        <div class="trending__card">
+          <div class="trending__img">
+            <img src="img/tranding/tanding-6.png" alt="" class="card-foto">
+          </div>
+          <h1 lang="en" class="card-name">Swaggie Shaggy</h1>
+          <div class="card-bay">
+            <p class="card-price">$81.3</p>
+            <img src="img/shopping-cart.svg" alt="" class="card-icon">
+          </div>
+          <!-- /.card-bay -->
+        </div>
+        <!-- /.trending__card -->
+        <!-- Карточка 7 -->
+        <div class="trending__card">
+          <div class="trending__img">
+            <img src="img/tranding/tanding-7.png" alt="" class="card-foto">
+          </div>
+          <h1 lang="en" class="card-name">Red Formal</h1>
+          <div class="card-bay">
+            <p class="card-price">$66.8</p>
+            <img src="img/shopping-cart.svg" alt="" class="card-icon">
+          </div>
+          <!-- /.card-bay -->
+        </div>
+        <!-- /.trending__card -->
+        <!-- Карточка 8 -->
+        <div class="trending__card">
+          <a href="#" class="trending__img trending__img--add">
+            <img src="img/plus.svg" alt="icon: plus" class="card-icon card-icon--add">
+            <h1 lang="en" class="card-name card-name--add">Смотреть<br>больше коллекций</h1>
+          </a>
+          <!-- /.trending__img -->
+        </div>
+        <!-- /.trending__card -->
+      </li>
+
+
+      <!-- Лучшее -->
+      <li id="best" class="trending__content-item content__item">
+        <!-- Карточка 2 -->
+        <div class="trending__card">
+          <div class="trending__img">
+            <img src="img/tranding/tanding-2.png" alt="" class="card-foto">
+          </div>
+          <h1 lang="en" class="card-name">Luxury Gown</h1>
+          <div class="card-bay">
+            <p class="card-price">$30.6</p>
+            <img src="img/shopping-cart.svg" alt="" class="card-icon">
+          </div>
+          <!-- /.card-bay -->
+        </div>
+        <!-- /.trending__card -->
+        <!-- Карточка 7 -->
+        <div class="trending__card">
+          <div class="trending__img">
+            <img src="img/tranding/tanding-7.png" alt="" class="card-foto">
+          </div>
+          <h1 lang="en" class="card-name">Red Formal</h1>
+          <div class="card-bay">
+            <p class="card-price">$66.8</p>
+            <img src="img/shopping-cart.svg" alt="" class="card-icon">
+          </div>
+          <!-- /.card-bay -->
+        </div>
+        <!-- /.trending__card -->
+        <!-- Карточка 1 -->
+        <div class="trending__card">
+          <div class="trending__img">
+            <img src="img/tranding/tanding-1.png" alt="" class="card-foto card-foto--h100">
+          </div>
+          <h1 lang="en" class="card-name">Minimalist Style</h1>
+          <div class="card-bay">
+            <p class="card-price">$25.7</p>
+            <img src="img/shopping-cart.svg" alt="" class="card-icon">
+          </div>
+          <!-- /.card-bay -->
+        </div>
+        <!-- /.trending__card -->
+        <!-- Карточка 6 -->
+        <div class="trending__card">
+          <div class="trending__img">
+            <img src="img/tranding/tanding-6.png" alt="" class="card-foto">
+          </div>
+          <h1 lang="en" class="card-name">Swaggie Shaggy</h1>
+          <div class="card-bay">
+            <p class="card-price">$81.3</p>
+            <img src="img/shopping-cart.svg" alt="" class="card-icon">
+          </div>
+          <!-- /.card-bay -->
+        </div>
+        <!-- /.trending__card -->
+        <!-- Карточка 3 -->
+        <div class="trending__card">
+          <div class="trending__img">
+            <img src="img/tranding/tanding-3.jpg" alt="" class="card-foto">
+          </div>
+          <h1 lang="en" class="card-name">Full Coloristy</h1>
+          <div class="card-bay">
+            <p class="card-price">$25.7</p>
+            <img src="img/shopping-cart.svg" alt="" class="card-icon">
+          </div>
+          <!-- /.card-bay -->
+        </div>
+        <!-- /.trending__card -->
+        <!-- Карточка 4 -->
+        <div class="trending__card">
+          <div class="trending__img">
+            <img src="img/tranding/tanding-4.png" alt="" class="card-foto">
+          </div>
+          <h1 lang="en" class="card-name">Pinky Winky</h1>
+          <div class="card-bay">
+            <p class="card-price">$109</p>
+            <img src="img/shopping-cart.svg" alt="" class="card-icon">
+          </div>
+          <!-- /.card-bay -->
+        </div>
+        <!-- /.trending__card -->
+        <!-- Карточка 5 -->
+        <div class="trending__card">
+          <div class="trending__img">
+            <img src="img/tranding/tanding-5.png" alt="" class="card-foto">
+          </div>
+          <h1 lang="en" class="card-name">Holiday Vibes</h1>
+          <div class="card-bay">
+            <p class="card-price">$51.2</p>
+            <img src="img/shopping-cart.svg" alt="" class="card-icon">
+          </div>
+          <!-- /.card-bay -->
+        </div>
+        <!-- /.trending__card -->
+        <!-- Карточка 8 -->
+        <div class="trending__card">
+          <div class="trending__img trending__img--add">
+            <img src="img/plus.svg" alt="icon: plus" class="card-icon card-icon--add">
+            <h1 lang="en" class="card-name card-name--add">Смотреть<br>больше коллекций</h1>
+          </div>
+          <!-- /.trending__img -->
+        </div>
+        <!-- /.trending__card -->
+      </li>
+
+
+      <!-- Скоро -->
+      <li id="soon" class="trending__content-item content__item">
+        
+        <!-- Карточка 6 -->
+        <div class="trending__card">
+          <div class="trending__img">
+            <img src="img/tranding/tanding-6.png" alt="" class="card-foto">
+          </div>
+          <h1 lang="en" class="card-name">Swaggie Shaggy</h1>
+          <div class="card-bay">
+            <p class="card-price">$81.3</p>
+            <img src="img/shopping-cart.svg" alt="" class="card-icon">
+          </div>
+          <!-- /.card-bay -->
+        </div>
+        <!-- /.trending__card -->
+        <!-- Карточка 5 -->
+        <div class="trending__card">
+          <div class="trending__img">
+            <img src="img/tranding/tanding-5.png" alt="" class="card-foto">
+          </div>
+          <h1 lang="en" class="card-name">Holiday Vibes</h1>
+          <div class="card-bay">
+            <p class="card-price">$51.2</p>
+            <img src="img/shopping-cart.svg" alt="" class="card-icon">
+          </div>
+          <!-- /.card-bay -->
+        </div>
+        <!-- /.trending__card -->
+        <!-- Карточка 2 -->
+        <div class="trending__card">
+          <div class="trending__img">
+            <img src="img/tranding/tanding-2.png" alt="" class="card-foto">
+          </div>
+          <h1 lang="en" class="card-name">Luxury Gown</h1>
+          <div class="card-bay">
+            <p class="card-price">$30.6</p>
+            <img src="img/shopping-cart.svg" alt="" class="card-icon">
+          </div>
+          <!-- /.card-bay -->
+        </div>
+        <!-- /.trending__card -->
+        <!-- Карточка 7 -->
+        <div class="trending__card">
+          <div class="trending__img">
+            <img src="img/tranding/tanding-7.png" alt="" class="card-foto">
+          </div>
+          <h1 lang="en" class="card-name">Red Formal</h1>
+          <div class="card-bay">
+            <p class="card-price">$66.8</p>
+            <img src="img/shopping-cart.svg" alt="" class="card-icon">
+          </div>
+          <!-- /.card-bay -->
+        </div>
+        <!-- /.trending__card -->
+        <!-- Карточка 3 -->
+        <div class="trending__card">
+          <div class="trending__img">
+            <img src="img/tranding/tanding-3.jpg" alt="" class="card-foto">
+          </div>
+          <h1 lang="en" class="card-name">Full Coloristy</h1>
+          <div class="card-bay">
+            <p class="card-price">$25.7</p>
+            <img src="img/shopping-cart.svg" alt="" class="card-icon">
+          </div>
+          <!-- /.card-bay -->
+        </div>
+        <!-- /.trending__card -->
+        <!-- Карточка 1 -->
+        <div class="trending__card">
+          <div class="trending__img">
+            <img src="img/tranding/tanding-1.png" alt="" class="card-foto card-foto--h100">
+          </div>
+          <h1 lang="en" class="card-name">Minimalist Style</h1>
+          <div class="card-bay">
+            <p class="card-price">$25.7</p>
+            <img src="img/shopping-cart.svg" alt="" class="card-icon">
+          </div>
+          <!-- /.card-bay -->
+        </div>
+        <!-- /.trending__card -->
+        <!-- Карточка 4 -->
+        <div class="trending__card">
+          <div class="trending__img">
+            <img src="img/tranding/tanding-4.png" alt="" class="card-foto">
+          </div>
+          <h1 lang="en" class="card-name">Pinky Winky</h1>
+          <div class="card-bay">
+            <p class="card-price">$109</p>
+            <img src="img/shopping-cart.svg" alt="" class="card-icon">
+          </div>
+          <!-- /.card-bay -->
+        </div>
+        <!-- /.trending__card -->
+        <!-- Карточка 8 -->
+        <div class="trending__card">
+          <div class="trending__img trending__img--add">
+            <img src="img/plus.svg" alt="icon: plus" class="card-icon card-icon--add">
+            <h1 lang="en" class="card-name card-name--add">Смотреть<br>больше коллекций</h1>
+          </div>
+          <!-- /.trending__img -->
+        </div>
+        <!-- /.trending__card -->
+      </li>
+    </ul>
+    <!-- /.trending__content -->
+  </div>
+  <!-- /.trending -->
+
+  <div class="testimonial">
+    <div class="testimonial__slide">
+      <!-- НАЧАЛО СЛАЙДЕРА -->
+      <!-- Основной контейнер слайдера -->
+      <div class="swiper-container testimonial__swiper-container">
+        <!-- Дополнительная необходимая обертка -->
+        <div class="testimonial__swiper-wrapper swiper-wrapper">
+          <!-- Slides -->
+          <div class="testimonial__swiper-slide swiper-slide">
+            <div class="testimonial__swiper-slide-wrapp">
+              <img src="img/quote-left.svg" alt="icon: quote" class="testimonial__img">
+              <p lang="en" class="testimonial__text">
+                Мне очень нравятся дизайн и стили, которые создает Ehya. Они такие разные и новаторские. Я покупала несколько раз из
+                коллекций, и что мне нравится, это то, что они действительно неподвластны времени, а качество ткани просто
+                превосходно.
+                Я с нетерпением жду новых коллекций от сезона к сезону
+              </p>
+              <span class="testimonial__title">Алисия Пума – клиент Fashun</span>
+            </div>
+          </div>
+          <!-- SLIDE 1 -->
+          <div class="testimonial__swiper-slide swiper-slide">
+            <div class="testimonial__swiper-slide swiper-slide">
+              <div class="testimonial__swiper-slide-wrapp">
+                <img src="img/quote-left.svg" alt="icon: quote" class="testimonial__img">
+                <p lang="en" class="testimonial__text">
+                  Мне очень нравятся дизайн и стили, которые создает Ehya. Они такие разные и новаторские. Я покупала несколько раз
+                  из
+                  коллекций, и что мне нравится, это то, что они действительно неподвластны времени, а качество ткани просто
+                  превосходно.
+                  Я с нетерпением жду новых коллекций от сезона к сезону
+                </p>
+                <span class="testimonial__title">Нателла Бананова – клиент Fashun</span>
+              </div>
+            </div>
+          </div>
+          <!-- SLIDE 2 -->
+          <div class="testimonial__swiper-slide swiper-slide">
+            <div class="testimonial__swiper-slide swiper-slide">
+              <div class="testimonial__swiper-slide-wrapp">
+                <img src="img/quote-left.svg" alt="icon: quote" class="testimonial__img">
+                <p lang="en" class="testimonial__text">
+                  Мне очень нравятся дизайн и стили, которые создает Ehya. Они такие разные и новаторские. Я покупала несколько раз
+                  из
+                  коллекций, и что мне нравится, это то, что они действительно неподвластны времени, а качество ткани просто
+                  превосходно.
+                  Я с нетерпением жду новых коллекций от сезона к сезону
+                </p>
+                <span class="testimonial__title">Алеша Ежов – клиент Fashun</span>
+              </div>
+            </div>
+          </div>
+          <!-- SLIDE 3 -->
+        </div>
+        <!-- Если нам нужна пагинация (Точки) -->
+        <div class="testimonial__swiper-pagination swiper-pagination"></div>
+      </div>
+      <!-- КОНЕЦ СЛАЙДЕРА -->
+    </div>
+    <!-- /.testimonial__slide -->
+  </div>
+  <!-- /.testimonial -->
+  <!-- Разделитель -->
+  <div class="hr"></div>
+  <!-- Разделитель -->
+  
+  <div class="stories">
+    <div class="stories-wrapper">
+      <div class="stories-block">
+        <div class="stories-badge">Истории</div>
+        <h1 lang="en" class="stories-title">Это История Fashun</h1>
+        <p class="stories-text">Ознакомьтесь с нашим рассказом
+          о&nbsp;моде. Написано нашим дизайнером и&nbsp;специалистом.</p>
+        <!-- БЛОК КНОПОК СЛАЙДЕРА -->
+        <div class="stories-button">
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <!-- <button class="swiper-button-prev"></button>
+          <button class="swiper-button-next"></button> -->
+        </div>
+      </div>
+      <!-- /.stories__block -->
+      
+      <!-- СЛАЙДЕР -->
+      <!-- Slider main container -->
+      <div class="swiper-container stories-slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Слайд 1 -->
+          <div class="swiper-slide">
+            <div class="slide-item">
+              <div class="slide-item__img slide-item__img--one"></div>
+              <div class="slide-item__wrapp">
+                <h3 lang="en" class="slide-item__text">Mix & Match Style 01: повседневный и формальный стиль</h3>
+                <a href="#" class="slide-item__link">Читать далее</a>
+              </div>
+            </div>
+            <!-- /.slide__item -->
+          </div>
+          <!-- /.swiper-slide 1 -->
+          
+          <!-- Слайд 2 -->
+          <div class="swiper-slide">
+            <div class="slide-item">
+              <div class="slide-item__img slide-item__img--two"></div>
+              <div class="slide-item__wrapp">
+                <h3 lang="en" class="slide-item__text">Лайфхак: Купите одежду Thrifft на воскресном рынке</h3>
+                <a href="#" class="slide-item__link">Читать далее</a>
+              </div>
+            </div>
+            <!-- /.slide__item -->
+          </div>
+          <!-- /.swiper-slide 2 -->
+
+          <!-- Слайд 3 -->
+          <div class="swiper-slide">
+            <div class="slide-item">
+              <div class="slide-item__img slide-item__img--three"></div>
+              <div class="slide-item__wrapp">
+                <h3 lang="en" class="slide-item__text">Красота в деталях: новинки в разделе для дома</h3>
+                <a href="#" class="slide-item__link">Читать далее</a>
+              </div>
+            </div>
+            <!-- /.slide__item -->
+          </div>
+          <!-- /.swiper-slide 3 -->
+
+          <!-- Слайд 4 -->
+          <div class="swiper-slide">
+            <div class="slide-item">
+              <div class="slide-item__img slide-item__img--four"></div>
+              <div class="slide-item__wrapp">
+                <h3 lang="en" class="slide-item__text">Красивые тарелки стильным людям</h3>
+                <a href="#" class="slide-item__link">Читать далее</a>
+              </div>
+            </div>
+            <!-- /.slide__item -->
+          </div>
+          <!-- /.swiper-slide 4 -->
+        </div>
+        <!-- /.swiper-wrapper -->
+      </div>
+      <!-- /.stories-slider -->
+    </div>
+    <!-- /.stories-wrapper -->
+  </div>
+  <!-- /.stoties -->
+
+
+  <div class="subscribe">
+    <div class="subscribe__wrapper">
+      <div class="subscribe__block">
+        <h2 lang="en" class="subscribe__title">Подпишитесь</h2>
+        <span class="subscribe__text">Напишите свой адрес электронной почты. Мы&nbsp;будем присылать вам новости из мира&nbsp;моды.</span>
+      </div>
+      <form action="send.php" method="POST" class="subscribe__form">
+        <img src="img/Icon-email.svg" alt="icon: email" class="subscribe__img">
+        <input type="email" class="subscribe__input" placeholder="Ваш Email" name="email" required>
+        <button class="subscribe__button">Подписаться</button>
+      </form>
+    </div>
+  </div>
+  <!-- /.subscribe -->
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <div class="footer__group">
+        <img src="img/Logo.png" alt="Logo: Ehya" class="footer__logo">
+        <span class="footer__text">Интернет-магазин брендовой одежды с оплатой онлайн</span>
+        <div class="footer__social">
+          <a href="https://www.google.com/" class="footer__social-link"><img src="img/Icon-google.svg" alt="icon: google"
+              class="footer__social-icon"></a>
+          <a href="https://twitter.com/" class="footer__social-link"><img src="img/Icon-twitter.svg" alt="icon: twitter"
+              class="footer__social-icon"></a>
+          <a href="https://www.instagram.com/" class="footer__social-link"><img src="img/Icon-instagram.svg"
+              alt="icon: instagram" class="footer__social-icon"></a>
+          <a href="https://linkedin.com/" class="footer__social-link"><img src="img/Icon-linkedin.svg" alt="icon: linkedin"
+              class="footer__social-icon"></a>
+        </div>
+      </div>
+      <!-- /.footer__group -->
+      <div class="footer__list footer__list--nav">
+        <h3 class="footer__title">Навигация</h3>
+        <ul class="footer__ul">
+          <li class="footer__item"><a href="#" class="footer__link">Новая коллекция</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Трендовая одежда</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Истории Fashun</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Отзывы клиентов</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Вся одежда</a></li>
+        </ul>
+      </div>
+      <!-- /.footer__list footer__list-- -->
+      <div class="footer__list footer__list--ser">
+        <h3 class="footer__title">Сервисы</h3>
+        <ul class="footer__ul">
+          <li class="footer__item"><a href="#" class="footer__link">Рассрочка на 6 мес</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Кредит на 12 мес</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Доставка по РФ</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Возврат покупок</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Акции и кэшбек</a></li>
+        </ul>
+      </div>
+      <!-- /.footer__list footer__list-- -->
+      <div class="footer__list footer__list--com">
+        <h3 class="footer__title">Компания</h3>
+        <ul class="footer__ul">
+          <li class="footer__item"><a href="#" class="footer__link">Об Ehya</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Правила сайта</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Обработка данных</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Вакансии</a></li>
+        </ul>
+      </div>
+      <!-- /.footer__list footer__list-- -->
+      <div class="footer__list footer__list--con">
+        <h3 class="footer__title">Контакты</h3>
+        <ul class="footer__ul">
+          <li class="footer__item"><a href="#" class="footer__link">Группа Фейсбук</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Канал Youtube</a></li>
+        </ul>
+      </div>
+      <!-- /.footer__list -->
+    </div>
+    <!-- /.footer-wrapper -->
+  </footer>
+  <!-- /.footer -->
+  <div class="modal">
+    <div class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img class="modal__close-img" src="img/icon-close.svg" alt="icon: close">
+      </a>
+      <form action="send.php" method="POST" class="modal__form">
+        <input type="email" class="modal__login" placeholder="Ваш email" name="email" required>
+        <input type="password" class="modal__password" placeholder="Ваш пароль" name="password" required>
+        <button class="modal__button">Войти</button>
+      </form>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
+  <!-- Стрелка -->
+  <a href="#" class="to-top">
+    <img src="img/to-top.png" alt="Наверх">
+  </a>
+  <!-- Подключает скрипты -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

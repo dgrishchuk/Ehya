@@ -1,0 +1,122 @@
+.stories
+  padding: 120px 0 50px 0
+  &-wrapper
+    max-width: 1150px
+    margin-right: auto
+    margin-left: auto
+    display: flex
+    justify-content: space-between
+  &-block
+    position: relative
+  &-badge
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 20px
+    text-transform: uppercase
+    color: #36B37E
+    padding: 6px 16px
+    background: rgba(54, 179, 126, 0.1)
+    border-radius: 2000px
+    width: 102px
+  &-title
+    width: 337px
+    margin-top: 28px
+    font-family: 'HKGrotesk-Bold'
+    font-style: normal
+    font-weight: bold
+    font-size: 48px
+    line-height: 60px
+    letter-spacing: 0.2px
+    color: #183B56
+  &-text
+    width: 392px
+    margin-top: 24px
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 36px
+    color: #5A7184
+  // Стили слайдера
+  &-slider
+    width: 662px
+    height: 475px
+    margin-left: 0
+    margin-right: 0
+
+  // Стили слайда
+  .slide
+    &-item
+      padding-top: 10px
+      &__img
+        background-color: #aeb0b3
+        border-radius: 8px 8px 0px 0px
+        width: 312px
+        height: 317px
+        position: relative
+        &--one
+          background-image: url(../img/slide-1.png)
+          background-position: center center
+          background-size: cover
+        &--two
+          background-image: url(../img/slide-2.png)
+          background-position: center center
+          background-size: cover
+        &--three
+          background-image: url(../img/slide-3.jpg)
+          background-position: center center
+          background-size: cover
+        &--four
+          background-image: url(../img/slide-4.jpg)
+          background-position: center center
+          background-size: cover
+      &__wrapp
+        width: 312px
+        height: 178px
+        background-color: #FAFDFF
+        padding: 21px 0 0 20px
+        position: absolute
+        top: 307px
+        left: 10px
+      &__text
+        font-family: 'HKGrotesk-Regular'
+        font-style: normal
+        font-weight: 500
+        font-size: 22px
+        line-height: 32px
+        letter-spacing: 0.2px
+        color: #183B56
+        width: 230px
+        margin: 0
+        margin-bottom: 19px
+      &__link
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+        color: #1565D8
+        text-decoration: none
+        margin-left: 2px
+
+  .swiper
+    &-slide
+      &-active
+        margin-right: 9px
+    &-button
+      &-prev
+        background-image: url(../img/Button-prev.svg)
+        width: 54px
+        height: 56px
+        top: 383px
+        left: 0px
+        &::after
+          display: none
+      &-next
+        background-image: url(../img/Button-prev.svg)
+        transform: scaleX(-1)
+        width: 54px
+        height: 56px
+        top: 383px
+        left: 76px
+        &::after
+          display: none
